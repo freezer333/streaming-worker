@@ -1,6 +1,6 @@
 {
   "name": "streaming-worker-sdk",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "SDK for writing C++ addons with streaming/event emitter interfaces for Node.js",
   "main": "include_dirs.js",
   "scripts": {

@@ -31,7 +31,7 @@ To build an addon you must:
 ## Example
 Here's an example for setting up an addon that just streams successive integers to JavaScript.  
 
-### Building the Addon
+### Building the Addon (`streaming-worker-sdk`)
 Start out with a directory `/simple/addon` and add a `binding.gyp` file:
 
 ```js
@@ -107,7 +107,7 @@ NODE_MODULE(simple_streample, StreamWorkerWrapper::Init)
 
 To build, do `npm install` (since the package.json file had a `"gypfile": true` entry.  This will build the addon, which can now be used from Node.js using the `streaming-worker` package.
 
-### Using the addon
+### Using the addon (`streaming-worker`)
 The SDK module is only for creating the C++ addon.  To interface with the addon, you need to pull in the [`streaming-worker'](https://www.npmjs.com/package/streaming-worker-sdk) module for JavaScript.
 
 Create a new directory (`/simple/js`) and do an `npm install streaming-worker`.  Now you can instantiate a `worker` by specifying the location of the addon executable.   
