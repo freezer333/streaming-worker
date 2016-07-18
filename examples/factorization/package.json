@@ -1,0 +1,15 @@
+{
+  "name": "factorization",
+  "version": "0.0.1",
+  "private": true,
+  "gypfile": true,
+  "scripts": {
+    "start": "node factorization.js"
+  },
+  "dependencies": {
+  	"nan": "*",
+    "through": "^2.3.8", 
+    "streaming-worker-sdk" : "*",
+    "streaming-worker" : "*"
+  }
+}

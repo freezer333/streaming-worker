@@ -1,0 +1,10 @@
+{
+  "name": "sensor_sim",
+  "version": "0.0.1",
+  "gypfile": true,
+  "scripts": {"start": "node sensor_sim.js"},
+  "dependencies": {
+    "nan": "*",
+    "streaming-worker-sdk": "*"
+  }
+}

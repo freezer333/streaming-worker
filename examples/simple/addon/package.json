@@ -1,0 +1,9 @@
+{
+  "name": "simple-stream",
+  "version": "0.0.1",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "*",
+    "streaming-worker-sdk": "^0.9.0"
+  }
+}

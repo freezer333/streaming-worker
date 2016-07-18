@@ -1,0 +1,29 @@
+{
+  "name": "streaming-worker-sdk",
+  "version": "0.9.0",
+  "description": "SDK for writing C++ addons with streaming/event emitter interfaces for Node.js",
+  "main": "include_dirs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nan": "*"
+  },
+  "devDependencies": {
+    "node-gyp": "~3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/freezer333/streaming-worker.git"
+  },
+  "keywords": [
+    "addon",
+    "streaming"
+  ],
+  "author": "Scott Frees",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freezer333/streaming-worker/issues"
+  },
+  "homepage": "https://github.com/freezer333/streaming-worker#readme"
+}
