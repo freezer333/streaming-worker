@@ -99,7 +99,7 @@ class StreamingWorker : public AsyncProgressWorker {
 
  protected:
 
-  void writeToNode(const AsyncProgressWorker::ExecutionProgress& progress, Message & msg){
+  void writeToNode(const AsyncProgressWorker::ExecutionProgress& progress, const Message & msg){
     toNode.write(msg);
     progress.Send(reinterpret_cast<const char*>(&toNode), sizeof(toNode));
   }
