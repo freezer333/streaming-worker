@@ -1,3 +1,5 @@
+#ifndef ____Streaming-Worker__
+#define ____Streaming-Worker__
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -201,4 +203,4 @@ class StreamWorkerWrapper : public Nan::ObjectWrap {
 
   StreamingWorker * _worker;
 };
-
+#endif // ____Streaming-Worker__
