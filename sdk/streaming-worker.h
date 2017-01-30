@@ -180,7 +180,8 @@ class StreamWorkerWrapper : public Nan::ObjectWrap {
       const int argc = 3;
       v8::Local<v8::Value> argv[argc] = {info[0], info[1], info[2]};
       v8::Local<v8::Function> cons = Nan::New(constructor());
-      info.GetReturnValue().Set(cons->NewInstance(argc, argv));
+      v8::Local<v8::Object> instance = Nan::NewInstance(cons, argc, argv).ToLocalChecked();
+      info.GetReturnValue().Set(instance);
     }
   }
 
