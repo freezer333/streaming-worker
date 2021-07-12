@@ -203,8 +203,8 @@ private:
 
   static NAN_METHOD(sendToAddon)
   {
-    v8::Local<v8::String> name(info[0]->ToString(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::String>())));
-    v8::Local<v8::String> data(info[1]->ToString(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::String>())));
+    v8::Local<v8::String> name(info[0]->ToString(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::String>()));
+    v8::Local<v8::String> data(info[1]->ToString(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::String>()));
     StreamWorkerWrapper *obj = Nan::ObjectWrap::Unwrap<StreamWorkerWrapper>(info.Holder());
     obj->_worker->fromNode.write(Message(*Nan::Utf8String(name), *Nan::Utf8String(data)));
   }
